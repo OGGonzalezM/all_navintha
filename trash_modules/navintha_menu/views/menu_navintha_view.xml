@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<!-- Creacion de la vista -->
+		<record model="ir.actions.act_window" id="navintha_menu_list_action">
+			<field name="name">Menú Navintha</field>
+			<field name="res_model">hr.job</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+                	<field name="help" type="html">
+                		<p class="oe_view_nocontent_create">Crear el primer perfil
+                		</p>
+            		</field>
+		</record>
+		
+		<!-- menu Item -->
+		<!-- Definicion del menu -->
+		<menuitem id="main_navintha_menu" name="Menú Navintha"></menuitem>
+		<!-- Item del menu principal, cabeza del menu -->
+		<menuitem id="navintha_menu" name="Compañia" parent="main_navintha_menu"></menuitem>
+	</data>
+</openerp>
